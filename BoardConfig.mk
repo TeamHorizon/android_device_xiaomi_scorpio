@@ -28,7 +28,7 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := wpk_scorpio_defconfig
+TARGET_KERNEL_CONFIG := scorpio_defconfig
 
 # NFC
 NXP_CHIP_TYPE := 2
