@@ -51,7 +51,7 @@
     <ctl name="LINEOUT4 Volume" value="13" />
     <ctl name="HPHL Volume" value="20" />
     <ctl name="HPHR Volume" value="20" />
-    <ctl name="RX0 Digital Volume" value="90" />
+    <ctl name="RX0 Digital Volume" value="89" />
     <ctl name="RX1 Digital Volume" value="84" />
     <ctl name="RX2 Digital Volume" value="84" />
     <ctl name="RX3 Digital Volume" value="84" />
@@ -60,12 +60,12 @@
     <ctl name="RX6 Digital Volume" value="84" />
     <ctl name="RX7 Digital Volume" value="84" />
     <ctl name="RX8 Digital Volume" value="84" />
-    <ctl name="ADC1 Volume" value="35" />
-    <ctl name="ADC2 Volume" value="35" />
-    <ctl name="ADC3 Volume" value="35" />
-    <ctl name="ADC4 Volume" value="35" />
-    <ctl name="ADC5 Volume" value="35" />
-    <ctl name="ADC6 Volume" value="35" />
+    <ctl name="ADC1 Volume" value="12" />
+    <ctl name="ADC2 Volume" value="12" />
+    <ctl name="ADC3 Volume" value="12" />
+    <ctl name="ADC4 Volume" value="12" />
+    <ctl name="ADC5 Volume" value="12" />
+    <ctl name="ADC6 Volume" value="12" />
     <ctl name="DEC0 Volume" value="84" />
     <ctl name="DEC1 Volume" value="84" />
     <ctl name="DEC2 Volume" value="84" />
@@ -1533,6 +1533,12 @@
         <ctl name="MultiMedia2 Mixer TERT_MI2S_TX" value="1" />
     </path>
 
+    <path name="afe-proxy-playback afe-proxy">
+    </path>
+
+    <path name="afe-proxy-record afe-proxy">
+    </path>
+
     <path name="voice-call">
         <ctl name="SLIM_0_RX_Voice Mixer CSVoice" value="1" />
         <ctl name="Voice_Tx Mixer SLIM_0_TX_Voice" value="1" />
@@ -2219,7 +2225,7 @@
     </path>
 
     <path name="speaker-mic">
-        <path name="adc4" />
+        <path name="adc1" />
         <path name="dmic3" />
     </path>
 
@@ -2986,6 +2992,12 @@
     <!-- Added for ADSP testfwk -->
     <path name="ADSP testfwk">
         <ctl name="SLIMBUS_DL_HL Switch" value="1" />
+    </path>
+
+    <path name="voice-rx">
+    </path>
+
+    <path name="voice-tx">
     </path>
 
 </mixer>
